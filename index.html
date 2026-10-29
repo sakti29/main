@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Katalog Buku Kelompok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGASI -->
+    <nav class="navbar">
+        <div class="logo">BookVerse</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Selamat Datang di BookVerse</h1>
+            <p>Ruang inspirasi, imajinasi, dan jendela pengetahuan digital .</p>
+            <a href="#catalog" class="btn">Jelajahi Katalog</a>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT / PROFILE SECTION -->
+    <section id="about" class="about-section">
+        <h2>Tentang BookVerse</h2>
+        <p>BookVerse adalah platform katalog buku digital statis yang dirancang dengan sedemikian rupa agar bagus dan menarik. Kami menyajikan berbagai rekomendasi buku pilihan untuk meningkatkan minat baca para generasi muda.</p>
+        <div class="vision-mission">
+            <div class="box">
+                <h3>Visi</h3>
+                <p>Menjadi pustaka digital mini yang interaktif, edukatif, dan mudah diakses siapa saja.</p>
+            </div>
+            <div class="box">
+                <h3>Misi</h3>
+                <p>Menyediakan sinopsis ringkas yang informatif dan membangun kolaborasi tim developer yang solid.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. MAIN CONTENT (CATALOG) SECTION -->
+    <section id="catalog" class="catalog-section">
+        <h2>Katalog Buku Pilihan</h2>
+        <p class="section-desc">Cari dan temukan buku favoritmu berdasarkan ulasan singkat kami.</p>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari judul buku atau penulis...">
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+            <!-- Buku 1 -->
+            <div class="book-card" data-title="Laskar Pelangi" data-author="Andrea Hirata">
+                <div class="book-info">
+                    <h3>Laskar Pelangi</h3>
+                    <p class="author">Oleh: Andrea Hirata</p>
+                    <p class="synopsis">Kisah perjuangan sepuluh anak di Pulau Belitung yang penuh keterbatasan namun memiliki tekad kuat untuk meraih mimpi dan menempuh pendidikan.</p>
+                </div>
+            </div>
+            <!-- Buku 2 -->
+            <div class="book-card" data-title="Atomic Habits" data-author="James Clear">
+                <div class="book-info">
+                    <h3>Atomic Habits</h3>
+                    <p class="author">Oleh: James Clear</p>
+                    <p class="synopsis">Panduan praktis bagaimana perubahan-perubahan kecil (habits) yang konsisten setiap hari dapat memberikan dampak luar biasa bagi masa depan Anda.</p>
+                </div>
+            </div>
+            <!-- Buku 3 -->
+            <div class="book-card" data-title="Cosmos" data-author="Carl Sagan">
+                <div class="book-info">
+                    <h3>Cosmos</h3>
+                    <p class="author">Oleh: Carl Sagan</p>
+                    <p class="synopsis">Penjelajahan ilmiah yang menakjubkan tentang ruang angkasa, sejarah sains, evolusi bumi, dan bagaimana manusia memahami alam semesta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTACT & FOOTER SECTION -->
+    <section id="contact" class="contact-section">
+        <h2>Hubungi Kami</h2>
+        <p>Punya pertanyaan atau rekomendasi buku menarik lainnya? Kirimkan pesan kepada tim kami.</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim! (Simulasi)');">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Alamat Email" required>
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 BookVerse Kelompok Catalyst. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
